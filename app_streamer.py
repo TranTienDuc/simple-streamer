@@ -24,7 +24,7 @@ with col1:
 
                           rtc_configuration={  # Add this config
                             "iceServers": [
-                                {"urls": ["turn:openrelay.metered.ca:80"],
+                                {"urls": ["turn:openrelay.metered.ca:443"],
                                  "username": "openrelayproject",
                                  "credential": "openrelayproject"
                                  }
