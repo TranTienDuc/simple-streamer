@@ -3,30 +3,25 @@ import av
 
 RTC_CONFIGURATION = RTCConfiguration(
     {
-      "iceServers": [
-      {
-        "urls": ["stun:stun.relay.metered.ca:80"],
-      },
-      {
-        "urls": ["turn:global.relay.metered.ca:80"],
-        "username": "6d7b9ebe74cfcf3ff4d74844",
-        "credential": "0yaGxZVrCZFteYcX",
-      },
-      {
-        "urls": ["turn:global.relay.metered.ca:80?transport=tcp"],
-        "username": "6d7b9ebe74cfcf3ff4d74844",
-        "credential": "0yaGxZVrCZFteYcX",
-      },
-      {
-        "urls": ["turn:global.relay.metered.ca:443"],
-        "username": "6d7b9ebe74cfcf3ff4d74844",
-        "credential": "0yaGxZVrCZFteYcX",
-      },
-      {
-        "urls": ["turns:global.relay.metered.ca:443?transport=tcp"],
-        "username": "6d7b9ebe74cfcf3ff4d74844",
-        "credential": "0yaGxZVrCZFteYcX",
-      },
+      "iceServers":[ 
+        {'url': 'stun:global.stun.twilio.com:3478', 
+         'urls': 'stun:global.stun.twilio.com:3478'
+        }, 
+        {'credential': '+AhWhqdmbiYjA/F2YuDkLhKm8CbxMTazACnzhUIT164=', 
+         'url': 'turn:global.turn.twilio.com:3478?transport=udp', 
+         'urls': 'turn:global.turn.twilio.com:3478?transport=udp', 
+         'username': '5b29b713bcdbdf04d16795646c8d43304ac49e6b381f82778f3d8b0861b21c76'
+        }, 
+        {'credential': '+AhWhqdmbiYjA/F2YuDkLhKm8CbxMTazACnzhUIT164=', 
+         'url': 'turn:global.turn.twilio.com:3478?transport=tcp', 
+         'urls': 'turn:global.turn.twilio.com:3478?transport=tcp', 
+         'username': '5b29b713bcdbdf04d16795646c8d43304ac49e6b381f82778f3d8b0861b21c76'
+        }, 
+        {'credential': '+AhWhqdmbiYjA/F2YuDkLhKm8CbxMTazACnzhUIT164=', 
+         'url': 'turn:global.turn.twilio.com:443?transport=tcp', 
+         'urls': 'turn:global.turn.twilio.com:443?transport=tcp', 
+         'username': '5b29b713bcdbdf04d16795646c8d43304ac49e6b381f82778f3d8b0861b21c76'
+        }
       ]
     }
 )
